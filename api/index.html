@@ -30,7 +30,9 @@
     }
     } else {
     // 不是微信客户端，直接可以访问链接
-    if (urlParmStr == url)
+    if (urlParmStr == url){
+        urlParmStr = "https://www.abc.com";
+    }
     console.log(urlParmStr);
     location.href=urlParmStr;
     }
